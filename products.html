@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - Merchtotal</title>
+  <meta name="description"
+    content="Browse our complete catalog of customizable merchandise. T-shirts, hoodies, caps, bags and more with fast delivery for events." />
+  <script src="https://kit.fontawesome.com/fe26aedba1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <h2>Merchtotal</h2>
+        </a>
+      </div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="signin.html" class="btn-secondary">Sign In</a>
+        <a href="signup.html" class="btn-primary">Sign Up</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="products-header">
+    <div class="container">
+      <h1>Browse Products</h1>
+      <p>
+        Customize any product with your logo or design. Fast delivery for
+        single items or bulk orders.
+      </p>
+    </div>
+  </section>
+
+  <section class="products-main">
+    <div class="container">
+      <div class="search-filters">
+        <div class="search-bar">
+          <input type="text" placeholder="Search products, e.g. 'cotton tee', 'embroidered cap'" />
+          <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-chips">
+            <span class="chip active">All</span>
+            <span class="chip">T-shirts</span>
+            <span class="chip">Hoodies</span>
+            <span class="chip">Caps</span>
+            <span class="chip">Bags</span>
+            <span class="chip">Accessories</span>
+          </div>
+
+          <div class="sort-dropdown">
+            <select>
+              <option>Popular</option>
+              <option>New</option>
+              <option>Price — Low to High</option>
+              <option>Fastest Delivery</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="advanced-filters">
+          <div class="filter-group">
+            <label>Fabric:</label>
+            <select>
+              <option>All Fabrics</option>
+              <option>Cotton</option>
+              <option>100% Combed Cotton</option>
+              <option>Poly Blend</option>
+              <option>Organic Cotton</option>
+              <option>Canvas</option>
+              <option>Fleece</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Print Method:</label>
+            <select>
+              <option>All Methods</option>
+              <option>DTG</option>
+              <option>Screen Print</option>
+              <option>Embroidery</option>
+              <option>Sublimation</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Quantity:</label>
+            <select>
+              <option>Any Quantity</option>
+              <option>1 piece</option>
+              <option>5–20</option>
+              <option>21–99</option>
+              <option>100+</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Price Range:</label>
+            <input type="range" min="0" max="2000" value="1000" class="price-range" />
+            <span class="price-display">₹0 - ₹1000+</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <div class="product-card" onclick="openProductModal('product1')">
+          <div class="product-image">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMxRjhFRjEiLz4KPHRleHQgeD0iMTUwIiB5PSIxNjAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPllPVVIgTE9HTzwvdGV4dD4KPC9zdmc+"
+              alt="T-shirt mockup" />
+            <div class="product-badges">
+              <span class="badge">100% Cotton</span>
+              <span class="badge best-seller">Best Seller</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Classic Event Tee — Combed Cotton</h3>
+            <p>
+              Soft, 180g combed cotton. Perfect for giveaways and merch
+              stalls.
+            </p>
+            <div class="product-price">
+              <span class="price">From ₹399</span>
+              <span class="bulk-price">Bulk from ₹299</span>
+            </div>
+            <div class="product-delivery">
+              Ships in 3–5 days | Schedule for Sep 20
+            </div>
+            <div class="product-actions">
+              <button class="btn-primary">Customize</button>
+              <button class="btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRjZCNkIiLz4KPHRleHQgeD0iMTUwIiB5PSIxNjAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPllPVVIgTE9HTzwvdGV4dD4KPC9zdmc+"
+              alt="Premium T-shirt" />
+            <div class="product-badges">
+              <span class="badge">Organic Cotton</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Premium Organic Cotton Tee</h3>
+            <p>
+              Eco-friendly organic cotton, slightly heavier handfeel.
+              Sustainable choice.
+            </p>
+            <div class="product-price">
+              <span class="price">From ₹549</span>
+              <span class="bulk-price">Bulk from ₹449</span>
+            </div>
+            <div class="product-delivery">
+              Ships in 4–6 days | Schedule for Sep 22
+            </div>
+            <div class="product-actions">
+              <button class="btn-primary">Customize</button>
+              <button class="btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" onclick="openProductModal('product2')">
+          <div class="product-image">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRjZCNkIiLz4KPHRleHQgeD0iMTUwIiB5PSIxNjAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPllPVVIgTE9HTzwvdGV4dD4KPC9zdmc+"
+              alt="Hoodie mockup" />
+            <div class="product-badges">
+              <span class="badge">Fleece</span>
+              <span class="badge fast">Fast turnaround</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Pullover Fleece Hoodie</h3>
+            <p>
+              Midweight fleece, lined hood, durable ribbed cuffs. Ideal for
+              autumn events.
+            </p>
+            <div class="product-price">
+              <span class="price">From ₹899</span>
+              <span class="bulk-price">Bulk from ₹699</span>
+            </div>
+            <div class="product-delivery">
+              Ships in 4–6 days | Schedule for Sep 22
+            </div>
+            <div class="product-actions">
+              <button class="btn-primary">Customize</button>
+              <button class="btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMwRjE3MjQiLz4KPHRleHQgeD0iMTUwIiB5PSIxNjAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPllPVVIgTE9HTzwvdGV4dD4KPC9zdmc+"
+              alt="Zip hoodie" />
+            <div class="product-badges">
+              <span class="badge">Premium</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Premium Zip Hoodie</h3>
+            <p>
+              Heavy-weight fleece with full zip closure. Professional
+              embroidery finish.
+            </p>
+            <div class="product-price">
+              <span class="price">From ₹1299</span>
+              <span class="bulk-price">Bulk from ₹999</span>
+            </div>
+            <div class="product-delivery">
+              Ships in 5–7 days | Schedule for Sep 25
+            </div>
+            <div class="product-actions">
+              <button class="btn-primary">Customize</button>
+              <button class="btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" onclick="openProductModal('product3')">
+          <div class="product-image">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMyQkI2NzMiLz4KPHRleHQgeD0iMTUwIiB5PSIxNjAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPllPVVIgTE9HTzwvdGV4dD4KPC9zdmc+"
+              alt="Canvas tote bag" />
+            <div class="product-badges">
+              <span class="badge">Canvas</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Canvas Tote Bag (12oz)</h3>
+            <p>
+              Heavy-duty canvas with long handles — great for promo goodies.
+            </p>
+            <div class="product-price">
+              <span class="price">From ₹249</span>
+              <span class="bulk-price">Bulk from ₹199</span>
+            </div>
+            <div class="product-delivery">
+              Ships in 2–4 days | Schedule for Sep 18
+            </div>
+            <div class="product-actions">
+              <button class="btn-primary">Customize</button>
+              <button class="btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxyZWN0IHg9IjUwIiB5PSI4MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxNDAiIGZpbGw9IiMxRjhFRjEiLz4KPHRleHQgeD0iMTUwIiB5PSIxNjAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPllPVVIgTE9HTzwvdGV4dD4KPC9zdmc+"
+              alt="Drawstring bag" />
+            <div class="product-badges">
+              <span class="badge">Lightweight</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Drawstring Bag</h3>
+            <p>
+              Lightweight polyester with drawstring closure. Perfect for event
+              giveaways.
+            </p>
+            <div class="product-price">
+              <span class="price">From ₹149</span>
+              <span class="bulk-price">Bulk from ₹99</span>
+            </div>
+            <div class="product-delivery">
+              Ships in 2–3 days | Schedule for Sep 17
+            </div>
+            <div class="product-actions">
+              <button class="btn-primary">Customize</button>
+              <button class="btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" onclick="openProductModal('product4')">
+          <div class="product-image">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBmaWxsPSIjMEYxNzI0Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ZT1VSIE9HTzwvdGV4dD4KPC9zdmc+"
+              alt="Structured cap" />
+            <div class="product-badges">
+              <span class="badge">Structured</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Structured Cap (6-panel)</h3>
+            <p>
+              Classic structured cap with adjustable strap. Embroider your
+              logo on the front.
+            </p>
+            <div class="product-price">
+              <span class="price">From ₹549</span>
+              <span class="bulk-price">Bulk from ₹449</span>
+            </div>
+            <div class="product-delivery">
+              Ships in 5–7 days | Schedule for Sep 25
+            </div>
+            <div class="product-actions">
+              <button class="btn-primary">Customize</button>
+              <button class="btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBmaWxsPSIjRkY2QjZCIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ZT1VSIE9HTzwvdGV4dD4KPC9zdmc+"
+              alt="Trucker cap" />
+            <div class="product-badges">
+              <span class="badge">Mesh Back</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Trucker Cap (Mesh Back)</h3>
+            <p>
+              Classic trucker style with mesh back panels. Lightweight and
+              breathable.
+            </p>
+            <div class="product-price">
+              <span class="price">From ₹449</span>
+              <span class="bulk-price">Bulk from ₹349</span>
+            </div>
+            <div class="product-delivery">
+              Ships in 4–6 days | Schedule for Sep 23
+            </div>
+            <div class="product-actions">
+              <button class="btn-primary">Customize</button>
+              <button class="btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxyZWN0IHg9IjEwMCIgeT0iMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzFGOEVGMSIvPgo8dGV4dCB4PSIxNTAiIHk9IjE2MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TE9HTzwvdGV4dD4KPC9zdmc+"
+              alt="Badge" />
+            <div class="product-badges">
+              <span class="badge">Metal</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Metal Badge (Pin Back)</h3>
+            <p>
+              High-quality metal badge with secure pin back. Perfect for
+              corporate events.
+            </p>
+            <div class="product-price">
+              <span class="price">From ₹99</span>
+              <span class="bulk-price">Bulk from ₹69</span>
+            </div>
+            <div class="product-delivery">
+              Ships in 6–8 days | Schedule for Sep 27
+            </div>
+            <div class="product-actions">
+              <button class="btn-primary">Customize</button>
+              <button class="btn-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-more">
+        <button class="btn-secondary btn-large">Load More Products</button>
+      </div>
+
+      <div class="empty-state" style="display: none">
+        <h3>No products match those filters</h3>
+        <p>
+          Try removing the delivery-date filter or selecting 'All fabrics'
+        </p>
+        <button class="btn-primary">
+          I need help — Contact our event team
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div id="productModal" class="modal">
+    <div class="modal-content product-modal-content">
+      <div class="modal-header">
+        <h2 id="productModalTitle">Product Details</h2>
+        <span class="close" onclick="closeModal('productModal')">&times;</span>
+      </div>
+      <div class="product-modal-body">
+        <div class="product-modal-image">
+          <img id="productModalImage" src="" alt="" />
+          <div class="fabric-swatches">
+            <span class="swatch active" style="background-color: #1f8ef1"></span>
+            <span class="swatch" style="background-color: #ff6b6b"></span>
+            <span class="swatch" style="background-color: #2bb673"></span>
+            <span class="swatch" style="background-color: #0f1724"></span>
+          </div>
+        </div>
+        <div class="product-modal-details">
+          <div id="productModalDescription"></div>
+          <div class="price-calculator">
+            <h4>Price Calculator</h4>
+            <div class="quantity-selector">
+              <label>Quantity:</label>
+              <input type="number" value="1" min="1" />
+            </div>
+            <div class="print-method">
+              <label>Print Method:</label>
+              <select>
+                <option>Screen Print (Recommended for 20+)</option>
+                <option>DTG</option>
+                <option>Embroidery (+₹50 per piece)</option>
+              </select>
+            </div>
+            <div class="delivery-date">
+              <label>Delivery Date:</label>
+              <input type="date" />
+            </div>
+          </div>
+          <button class="btn-primary btn-full">
+            Add to cart — Start design
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-section">
+            <h3>Merchtotal</h3>
+            <p>
+              Professional custom merchandise for events of all sizes. From
+              concept to delivery, we make it simple.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="products.html">T-Shirts</a></li>
+              <li><a href="products.html">Hoodies</a></li>
+              <li><a href="products.html">Caps & Hats</a></li>
+              <li><a href="products.html">Bags & Totes</a></li>
+              <li><a href="products.html">Accessories</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#press">Press</a></li>
+              <li><a href="#sustainability">Sustainability</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#help">Help Center</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#shipping">Shipping Info</a></li>
+              <li><a href="#returns">Returns</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Account</h4>
+            <ul>
+              <li><a href="signin.html">Sign In</a></li>
+              <li><a href="signup.html">Sign Up</a></li>
+              <li><a href="#orders">Order Status</a></li>
+              <li><a href="#designs">My Designs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-legal">
+            <p>&copy; 2024 Merchtotal. All rights reserved.</p>
+            <div class="footer-legal-links">
+              <a href="#privacy">Privacy Policy</a>
+              <a href="#terms">Terms of Service</a>
+              <a href="#cookies">Cookie Policy</a>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <p><i class="fas fa-envelope"></i> support@merchtotal.com</p>
+            <p><i class="fas fa-phone"></i> 1-800-MERCH-24</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Modal functions
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = "block";
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = "none";
+    }
+
+    function openProductModal(productId) {
+      const modal = document.getElementById("productModal");
+      const title = document.getElementById("productModalTitle");
+      const image = document.getElementById("productModalImage");
+      const description = document.getElementById("productModalDescription");
+
+      // Sample product data
+      const products = {
+        product1: {
+          title: "Classic Event Tee — Combed Cotton",
+          image:
+            "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMxRjhFRjEiLz4KPHRleHQgeD0iMTUwIiB5PSIxNjAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPllPVVIgTE9HTzwvdGV4dD4KPC9zdmc+",
+          description:
+            '<p>180 GSM combed cotton, pre-shrunk. Perfect for event tees and giveaways. Prints well with DTG and screen printing.</p><div class="fabric-details"><h5>Fabric Details:</h5><ul><li>Breathable, soft, great for everyday wear</li><li>Best for DTG & screen printing</li><li>Available in 12 colors</li></ul></div>',
+        },
+        product2: {
+          title: "Pullover Fleece Hoodie",
+          image:
+            "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRjZCNkIiLz4KPHRleHQgeD0iMTUwIiB5PSIxNjAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPllPVVIgTE9HTzwvdGV4dD4KPC9zdmc+",
+          description:
+            '<p>Midweight fleece, lined hood, durable ribbed cuffs. Ideal for autumn events and merch drops. Embroidery-friendly.</p><div class="fabric-details"><h5>Fabric Details:</h5><ul><li>Warm, ideal for hoodies</li><li>Best for embroidery & patch work</li><li>Available in 8 colors</li></ul></div>',
+        },
+        product3: {
+          title: "Canvas Tote Bag (12oz)",
+          image:
+            "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjdGQUZDIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMyQkI2NzMiLz4KPHRleHQgeD0iMTUwIiB5PSIxNjAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPllPVVIgTE9HTzwvdGV4dD4KPC9zdmc+",
+          description:
+            '<p>Heavy-duty canvas with long handles — great for promo goodies. Works with single-color screen print or full-color transfer.</p><div class="fabric-details"><h5>Canvas Details:</h5><ul><li>Sturdy, ideal for totes and bags</li><li>Best for screen printing</li><li>Available in natural and colors</li></ul></div>',
+        },
+        product4: {
+          title: "Structured Cap (6-panel)",
+          image:
+            "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBmaWxsPSIjMEYxNzI0Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ZT1VSIE9HTzwvdGV4dD4KPC9zdmc+",
+          description:
+            '<p>Classic structured cap with adjustable strap. Embroider your logo on the front panel for a premium feel.</p><div class="fabric-details"><h5>Cap Details:</h5><ul><li>Classic structured design</li><li>Perfect for embroidery</li><li>Adjustable snapback closure</li></ul></div>',
+        },
+      };
+
+      const product = products[productId];
+      if (product) {
+        title.textContent = product.title;
+        image.src = product.image;
+        description.innerHTML = product.description;
+      }
+
+      modal.style.display = "block";
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function (event) {
+      const modals = document.querySelectorAll(".modal");
+      modals.forEach((modal) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    };
+
+    // Filter chips functionality
+    document.querySelectorAll(".chip").forEach((chip) => {
+      chip.addEventListener("click", function () {
+        document
+          .querySelectorAll(".chip")
+          .forEach((c) => c.classList.remove("active"));
+        this.classList.add("active");
+      });
+    });
+
+    // Price range slider
+    const priceRange = document.querySelector(".price-range");
+    const priceDisplay = document.querySelector(".price-display");
+
+    if (priceRange && priceDisplay) {
+      priceRange.addEventListener("input", function () {
+        const value = this.value;
+        priceDisplay.textContent = `₹0 - ₹${value}+`;
+      });
+    }
+  </script>
+</body>
+
+</html>
