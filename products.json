@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Classic Event Tee — Combed Cotton",
+    "description": "Soft, 180g combed cotton. Perfect for giveaways and merch stalls.",
+    "price": 399,
+    "bulkPrice": 299,
+    "image": "https://images.jdmagicbox.com/quickquotes/images_main/plain-t-shirt-374993061-8jvyk.jpg",
+    "badges": [{ "label": "Best Seller", "type": "best-seller" }],
+    "tags": "Best Seller,Cotton,180g",
+    "shipping": "Ships in 3–5 days | Schedule for Sep 20"
+  },
+  {
+    "name": "Pullover Fleece Hoodie",
+    "description": "Midweight fleece, lined hood, durable ribbed cuffs. Ideal for autumn events.",
+    "price": 899,
+    "bulkPrice": 699,
+    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSpsnIoMquQvqHyGjyERzGJl-ZnDwdUofFvikJBxOkdei7LiCUG5AQLN_cZhhnN949CT8jlqs7CHVlfm3xJcTBcu-CH_YIqmUaTqRbCv231tTEL2bPfxO4r",
+    "badges": [{ "label": "Fleece", "type": "fast" }],
+    "tags": "Fleece,Midweight,Lined Hood",
+    "shipping": "Ships in 4–6 days | Schedule for Sep 22"
+  },
+  {
+    "name": "Premium Zip Hoodie",
+    "description": "Heavy-weight fleece with full zip closure. Professional embroidery finish.",
+    "price": 1299,
+    "bulkPrice": 999,
+    "image": "https://image.hm.com/assets/hm/f5/a6/f5a6dc25b55a179edab1d2882d61cb92f06060af.jpg?imwidth=1260",
+    "badges": [{ "label": "Premium", "type": "regular" }],
+    "tags": "Premium,Heavy-weight,Full Zip",
+    "shipping": "Ships in 5–7 days | Schedule for Sep 25"
+  },
+  {
+    "name": "Canvas Tote Bag (12oz)",
+    "description": "Heavy-duty canvas with long handles — great for promo goodies.",
+    "price": 249,
+    "bulkPrice": 199,
+    "image": "https://m.media-amazon.com/images/I/51nwq2cSbQL.jpg",
+    "badges": [{ "label": "Canvas", "type": "regular" }],
+    "tags": "Canvas,12oz,Long Handles",
+    "shipping": "Ships in 2–4 days | Schedule for Sep 18"
+  },
+  {
+    "name": "Drawstring Bag",
+    "description": "Lightweight polyester with drawstring closure. Perfect for event giveaways.",
+    "price": 149,
+    "bulkPrice": 99,
+    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR-nVuXJv6X8MFQgCTEgpLUjtFZeOpAjBZcde7lXW7hpJqCuWvfoNcT6KWep0LFlUMrsvdSnYHQ2YtH05LKCuDprpJ97qcXvc36U3JWZ99tmHqF8ekCynem",
+    "badges": [{ "label": "Lightweight", "type": "regular" }],
+    "tags": "Lightweight,Polyester,Drawstring",
+    "shipping": "Ships in 2–3 days | Schedule for Sep 17"
+  }
+]
