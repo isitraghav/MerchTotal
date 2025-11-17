@@ -32,7 +32,6 @@ class Product {
                 </div>
                 <div class="product-delivery">${this.shipping}</div>
                 <div class="product-actions">
-                  <button class="btn-primary">Customize</button>
                   <button class="btn-secondary add-to-cart-btn" data-id="${this.id}" data-name="${this.name}" data-price="${this.price}" data-image="${this.image}" data-tags="${this.tags}">Add to Cart</button>
                 </div>
               </div>
