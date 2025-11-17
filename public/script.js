@@ -103,13 +103,25 @@ class Cart {
         headers: { 'Authorization': `Bearer ${this.token}` }
       });
       const cart = await response.json();
-      // We need to get the full product details for the display
-      const detailedCart = await Promise.all(cart.map(async (item) => {
-        const productResponse = await fetch(`/api/products`);
-        const products = await productResponse.json();
-        const product = products.find(p => p._id === item.productId);
-        return { ...product, ...item };
-      }));
+      
+      // Get all products once
+      const productsResponse = await fetch('/api/products');
+      const products = await productsResponse.json();
+      
+      // Map cart items with product details
+      const detailedCart = cart.map(item => {
+        const product = products.find(p => p._id === (item.productId._id || item.productId));
+        if (product) {
+          return {
+            ...product,
+            productId: item.productId._id || item.productId,
+            quantity: item.quantity,
+            id: product._id
+          };
+        }
+        return null;
+      }).filter(item => item !== null);
+      
       return detailedCart;
     } else {
       const cartData = localStorage.getItem(this.storageKey);
@@ -264,8 +276,8 @@ class Cart {
     document.getElementById('grandTotal').textContent = '₹' + grandTotal;
   }
 
-  checkout() {
-    const items = this.getItems();
+  async checkout() {
+    const items = await this.getItems();
     if (items.length === 0) {
       alert('Your cart is empty!');
       return;
@@ -344,8 +356,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   const checkoutBtn = document.getElementById('checkoutBtn');
   if (checkoutBtn) {
-    checkoutBtn.addEventListener('click', function () {
-      shoppingCart.checkout();
+    checkoutBtn.addEventListener('click', async function () {
+      await shoppingCart.checkout();
     });
   }
 });

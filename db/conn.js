@@ -1,25 +1,16 @@
-const { MongoClient } = require('mongodb');
-const url = 'mongodb://localhost:27017';
-const client = new MongoClient(url);
-const dbName = 'webdev';
+const mongoose = require('mongoose');
 
-let db;
+const url = 'mongodb://localhost:27017/webdev';
 
 const connectToServer = async () => {
   try {
-    await client.connect();
-    console.log('Connected successfully to server');
-    db = client.db(dbName);
+    await mongoose.connect(url);
+    console.log('Connected successfully to MongoDB using Mongoose');
   } catch (err) {
-    console.error(err);
+    console.error('MongoDB connection error:', err);
   }
-};
-
-const getDb = () => {
-  return db;
 };
 
 module.exports = {
   connectToServer,
-  getDb,
 };

@@ -1,11 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const dbo = require('../db/conn');
+const Product = require('../models/Product');
 
 router.get('/', async (req, res) => {
-  const db = dbo.getDb();
-  const products = await db.collection('products').find({}).toArray();
-  res.json(products);
+  try {
+    const products = await Product.find({});
+    res.json(products);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching products', error: error.message });
+  }
 });
 
 module.exports = router;
