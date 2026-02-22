@@ -361,3 +361,23 @@ document.addEventListener('DOMContentLoaded', async function () {
     });
   }
 });
+
+
+const btn = document.getElementById("topBtn");
+
+// show button when user scrolls down
+window.onscroll = function () {
+  if (window.scrollY > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// go to top when clicked
+btn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
