@@ -4,11 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.6;
   color: #0f1724;
-  background-color: #f7fafc;
+  background-color: #333333;
 }
 
 .container {
@@ -18,8 +22,8 @@ body {
 }
 
 .btn-primary {
-  background-color: #1a1a1a;
-  color: #ffffff;
+  background-color:  #3f0d65;
+  color: #fffcfc;
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
@@ -31,8 +35,8 @@ body {
 }
 
 .btn-secondary {
-  background-color: transparent;
-  color: #4a4a4a;
+  background-color: #a5234c;
+  color: #fffcfc;
   border: 1px solid #d1d5db;
   padding: 7px 15px;
   border-radius: 4px;
@@ -64,7 +68,7 @@ body {
 }
 
 .navbar {
-  background-color: #ffffff;
+  background-color: #e7d8ff;
   border-bottom: 1px solid #e5e7eb;
   position: fixed;
   top: 0;
@@ -1459,4 +1463,18 @@ body {
   .cart-summary {
     position: static;
   }
+}
+
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 10px 15px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
